@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Tyler Hunt">
+    <meta name="date" content="9/12/16">
+    <meta name="description" content="Redesign using Bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../myScripts/css/bootstrap.css" rel="stylesheet" />
+    <link href="../myScripts/css/bootstrap.min.css" rel="stylesheet" />
+
+    <title>Tyler Hunt's JavaScript Website</title>
+</head>
+
+<body>
+    <header></header>
+
+    <!-- main body container -->
+    <div class="container">
+        <article>
+            <div class="row">
+
+                <!-- /Left sidebar container -->
+                <div class="col-md-2"  id="sideBar">
+                    <!--add nav via Js-->
+                    <!--<script>displaySideBar();</script>-->
+                </div>
+                <!-- /Left sidebar container -->
+
+                <!-- body container -->
+                <div class="col-md-10">
+
+                    <!--panel container -->
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">BMI Calculator</div>
+                        <div class="panel-body">
+                            <form name="bmiForm">
+                                <h4>Weight (Pounds 1-750)</h4><input
+                                    class="form-control"
+                                    type="text" id="txt_bmiWeight"
+                                    name="txt_bmiWeight"
+                                    placeholder="Enter body weight...">
+                                <br>
+                                <h4>Height (Inches 1-100)</h4><input
+                                    class="form-control"
+                                    type="text" id="txt_bmiHeight"
+                                    name="txt_bmiHeight"
+                                    placeholder="Enter body height...">
+                                <br>
+                                <input class="btn btn-primary" type="button"
+                                      id="btn_calculate"
+                                      value="Calculate BMI">
+                                      <br><hr>
+                                <h4>Your BMI is</h4><input
+                                    class="form-control"
+                                    type="text" id="txt_bmiCalculated"
+                                    name="txt_bmiCalculated" readonly>
+                                <br>
+                            </form>
+                        </div>
+                    </div>
+                    <!--/panel container -->
+
+                </div>
+                <!-- /body container -->
+
+            </div>
+        </article>
+        <hr>
+
+        <footer></footer>
+
+    </div>
+    <!-- /main body container -->
+
+	    <script src="../myScripts/CSP.js"></script>
+</body>
+</html>
