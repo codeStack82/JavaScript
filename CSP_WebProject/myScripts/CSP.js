@@ -196,11 +196,11 @@ function displaySideBar() {
 
    var sideBarContent = ' <div>'
       sideBarContent += '    <ul class="list-unstyled">'
-      sideBarContent += '        <li> <a class="navbar-brand" href="../pages/index.html"><strong>Home</strong></a></li> '
+      sideBarContent += '        <li><a class="navbar-brand" href="../pages/index.html"><strong>Home</strong></a></li> '
       sideBarContent += '        <li><a class="navbar-brand" href="../pages/functions.html">Functions</a></li>'
       sideBarContent += '        <li><a class="navbar-brand" href="../pages/primeNumGen.html">Control Flow</a></li>'
       sideBarContent += '        <li><a class="navbar-brand" href="../pages/debug.html">Debug Code</a></li>'
-      sideBarContent += '        <li><a class="navbar-brand" href="#"> CSP 05</a></li>'
+      sideBarContent += '        <li><a class="navbar-brand" href="../pages/DOM.html">DOM/DHTML</a></li>'
       sideBarContent += '        <li><a class="navbar-brand" href="#"> CSP 06</a></li>'
       sideBarContent += '        <li><a class="navbar-brand" href="#"> CSP 07</a></li>'
       sideBarContent += '        <li><a class="navbar-brand" href="#"> CSP 08</a></li>'
