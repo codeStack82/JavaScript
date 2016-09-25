@@ -79,7 +79,7 @@ function previewFive(){
         lastFigure.style.zIndex = "5";
         lastFigure.style.position = "absolute";
         lastFigure.style.right = "45px";
-        lastFigure.style.left = "67px";
+        lastFigure.style.top = "67px";
     var lastImage = document.createElement("img");
         lastImage.width =  "240"
         lastImage.height = "135"
@@ -92,7 +92,7 @@ function previewFive(){
     var firstFigure = lastFigure.cloneNode(true);
         firstFigure.id = "fig1";
         firstFigure.style.right = "";
-        firstFigure.style.left = "67px";
+        firstFigure.style.left = "45px";
     //add fig1 to article
     articleE1.insertBefore(firstFigure,document.getElementById("fig2"));
 
