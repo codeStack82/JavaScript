@@ -209,7 +209,7 @@ function displaySideBar() {
       sideBarContent += '        <li><a class="navbar-brand" href="#"> CSP 11</a></li>'
       sideBarContent += '        <li><a class="navbar-brand" href="#"> CSP 12</a></li>'
       sideBarContent += '    </ul>'
-      sideBarContent += ' </div>'
+      sideBarContent += ' </div><br><br><br><br><br>'
 
       var pageSideBar = document.getElementById('sideBar');
       pageSideBar.innerHTML =  pageSideBar.innerHTML += sideBarContent;
@@ -220,7 +220,7 @@ function displaySideBar() {
 //function display footer
 function displayFooter() {
 
-     var footerContent = '<nav class="navbar navbar-default navbar-fixed-bottom">'
+     var footerContent = '<nav class="navbar navbar-default ">'
         footerContent += '    <div class="container">'
         footerContent += '         <div class="row" id="footerDisclaimer">'
         footerContent += '                <div class="col-lg-4">'

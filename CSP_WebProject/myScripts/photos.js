@@ -4,8 +4,8 @@
 
  *    Photo gallery
  *    Variables and functions
- *    Author: 
- *    Date:   
+ *    Author:
+ *    Date:
 
  *    Filename: photos.js
  */
@@ -41,7 +41,7 @@ function leftArrow() {
 
 /* open center figure in separate window */
 function zoomFig() {
-   
+
 }
 
 /* create event listeners and populate image elements */
@@ -50,9 +50,56 @@ function setUpPage() {
    populateFigures();
 }
 
+function populateFigures(){
+    var filename;
+    var currentFig;
+
+    for(var i = 1; i < 4; i++){
+        //build image file name
+        filename = "../images/IMG_0" + photoOrder[i] + "sm.jpg";
+        //set current fig from img tag in page
+        currentFig = document.getElementsByTagName("img")[i-1];
+        //set current fig src as file name
+        currentFig.src = filename
+    }
+}
+
+function createEventListeners(){
+
+    //expand center image
+    var mainFig = document.getElementsByTagName("img")[1]
+
+    if(mainFig.addEventListener){
+        mainFig.addEventListener("click",mainFig,false);
+        //alert("<-->")
+    }else if (mainFig.attachEvent) {
+        mainFig.attachEvent("onclick",mainFig);
+    }
+
+    //Left arrow listener
+    var leftArrow = document.getElementById("leftArrow");
+
+    if(leftArrow.addEventListener){
+        leftArrow.addEventListener("click",leftArrow,false);
+        //alert("<--")
+    }else if (leftArrow.attachEvent) {
+        leftArrow.attachEvent("onclick",leftArrow);
+    }
+
+    //Right arrow listener
+    var rightArrow = document.getElementById("rightArrow");
+
+    if(rightArrow.addEventListener){
+        rightArrow.addEventListener("click",rightArrow,false);
+        //alert("-->")
+    }else if (rightArrow.attachEvent) {
+        rightArrow.attachEvent("onclick",rightArrow);
+    }
+}
+
 /* run setUpPage() function when page finishes loading */
 if (window.addEventListener) {
-  window.addEventListener("load", setUpPage, false); 
+  window.addEventListener("load", setUpPage, false);
 } else if (window.attachEvent)  {
   window.attachEvent("onload", setUpPage);
 }
