@@ -133,14 +133,13 @@ function previewThree(){
         numberButton.attachEvent("onclick",previewFive);
     }
 
-} //good
-
+}
 
 /* create event listeners and populate image elements */
 function setUpPage() {
    createEventListeners();
    populateFigures();
-} //good
+}
 
 function createEventListeners(){
 
