@@ -182,7 +182,7 @@ function displayHeader(){
       headerContent += '<!-- Main jumbotron -->'
       headerContent += '  <div class="jumbotron">'
       headerContent += '        <div class="container">'
-      headerContent += '        <h2><span class="glyphicon glyphicon-king" aria-hidden="true"></span>  Tyler Hunt\'s <code>CS-2513 JavaScripter Website</code> </h2>'
+      headerContent += '        <h2><span class="glyphicon glyphicon-king" aria-hidden="true"></span>  Tyler Hunt\'s <code>CS-2513 JavaScript Website</code> </h2>'
       headerContent += '        </div>'
       headerContent += '  </div>'
       headerContent += '  <!-- Main jumbotron -->'
