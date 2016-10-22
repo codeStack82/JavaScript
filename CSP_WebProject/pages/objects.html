@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Tyler Hunt">
+    <meta name="date" content="10/16/16">
+    <meta name="description" content="Redesign using Bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../myScripts/css/bootstrap.css" rel="stylesheet" />
+    <link href="../myScripts/css/bootstrap.min.css" rel="stylesheet" />
+
+    <title>Tyler Hunt's JavaScript Website</title>
+</head>
+
+<body>
+    <header></header>
+
+    <div class="container">
+        <article>
+            <div class="row">
+
+                <!--Left SideBar-->
+                <div class="col-md-2" id="sideBar"></div>
+                <!--/Left SideBar-->
+
+                <!--Right main body -->
+                <div class="col-md-10">
+
+                  <!--panel container -->
+                  <div id="main" class="panel panel-primary">
+                      <div class="panel-heading"><h2>Photo Gallery: Ordering Form</h2></div>
+                      <div class="panel-body">
+                        <form name="photoOrderForm" >
+
+                            <!--Pic 1-->
+                            <div class="col-md-12">
+                              <legend>Grand Canyon Pictures</legend>
+                              <figure class="centered-text" id="fig1">
+                                 <img src="../images/IMG_03sm.jpg" width="250" height="175" alt="Grand Canyon Family"/>
+                                   <figcaption>Grand Canyon 2016 - Family Picture</figcaption>
+                              </figure>
+                              <br><br>
+                            </div>
+                            <!--/Pic 1-->
+
+                            <!--Pic 2-->
+                            <div class="col-md-12">
+                              <figure class="centered-text"  id="fig2">
+                                 <img src="../images/IMG_04sm.jpg" width="250" height="175" alt="Grand Canyon Couple"/>
+                                    <figcaption>Grand Canyon 2016 - Couple's Picture</figcaption>
+                              </figure>
+                              <br><br>
+                            </div>
+                            <!--/Pic 2-->
+
+                            <!--Customer info-->
+                            <div class="input-group col-md-12 "><!--Customer info-->
+                              <fieldset  id="customerInfo">
+                                 <legend>Customer Information</legend>
+
+                                  <div class="col-md-push-3 inline-block input-group ">
+                                     <label>Name:&nbsp;</label>
+                                     <input type="text" id="nameinput" name="name" tabindex="1" required="required" />
+                                     <div class="col-md-push-3 customError" id="nameError"></div>
+                                     <br><br>
+                                   </div>
+
+                                   <div class="col-md-push-3 input-group">
+                                     <label>Email:&nbsp;</label>
+                                     <input type="email" id="emailinput" name="email" tabindex="2" required="required" />
+                                      <div class="col-md-push-3 customError" id="emailError"></div>
+                                     <br><br>
+                                   </div>
+                              </fieldset>
+                            </div>
+                            <!--/Customer info-->
+
+                            <!--Select Image-->
+                            <div class="col-md-12 input-group ">
+                               <fieldset id="selectImage">
+                                  <legend>Select Image</legend>
+                                    <div class="col-md-push-3 input-group">
+                                      <input type="radio" name="rdo_imageSelect" tabindex="3" id="img1" value="group1" />
+                                      <label>&nbsp;Grand Canyon Image 1</label>
+                                      <br><br>
+
+                                      <input type="radio" name="rdo_imageSelect" id="img2" value="group1" />
+                                      <label>&nbsp;Grand Canyon Image 2</label>
+                                      <div class="col-md-push-3 customError" id="imgSelectError"></div>
+                                    </div>
+                               </fieldset>
+                               <br><br>
+                            </div>
+                            <!--/Select Image-->
+
+                            <!--Order Image-->
+                            <div class="col-md-12 input-group" >
+                                 <legend>Ordering Information</legend>
+                           </div>
+                             <!--radioBox options-->
+                             <div class="col-md-push-3 inline-block input-group">
+                               <fieldset id="orderInfo">
+                                   <input type="radio" name="rdo_orderSelect" tabindex="4" id="img3" value="group2" />
+                                   <label>&nbsp;4-Wallets ($10) </label>
+                                   <br>
+
+                                   <input type="radio" name="rdo_orderSelect" id="img4" value="group2" />
+                                   <label>&nbsp;2-4x6 ($10) </label>
+                                   <br>
+
+                                   <input type="radio" name="rdo_orderSelect" id="img5" value="group2" />
+                                   <label>&nbsp;5x7 ($10) </label>
+                                   <br>
+
+                                   <input type="radio" name="rdo_orderSelect" id="img6" value="group2" />
+                                   <label>&nbsp;8x10 ($10) </label>
+                                   <br>
+
+                                   <input type="radio" name="rdo_orderSelect" id="img7" value="group2" />
+                                   <label>&nbsp;11x14 ($10) </label>
+                               </fieldset>
+                               <div class="col-md-pull-4 pull-left customError inline" id="optionError"></div>
+                               <!--radioBox options-->
+                               <br><br>
+                            </div>
+                            <!--/Order Image-->
+
+                          <!--Quantity-->
+                          <div class="col-md-push-3  input-group">
+                            <fieldset id="quantityInfo">
+                               <div class="col-md-push-3 ">
+                                  <label>Quantity:&nbsp;</label>
+                                  <input type="text" id="qtyinput" name="qty" tabindex="5" required="required" />
+
+                              </div>
+                            </fieldset>
+                            <div class="col-md-push-3 customError inline" id="qtyError"></div>
+                          </div>
+                          <!--/Quantity-->
+
+                          <br><br>
+
+                          <!--submit btn -->
+                          <div class="col-md-12 inline-block">
+                               <div class="col-md-push-3 input-group">
+                                     <input type="button" id="submitBtn" value="Prepare Order" />
+                               </div>
+                          </div>
+                          <!--/submit btn -->
+
+
+                        </div><!--/panel body -->
+                      </form>
+                  <!--Submitted Form Data Display-->
+              </div><!--/panel container -->
+              <div id='submittedOrderFrom'></div>
+            </div><!--/Main container -->
+          </div><!--/row -->
+        </article>
+        <hr>
+        <!--Footer-->
+        <footer></footer>
+        <!--/Footer-->
+    </div> <!-- /Main container -->
+	    <script src="../myScripts/CSP.js"></script>
+</body>
+</html>
