@@ -1149,9 +1149,6 @@ hr {
   border: 0;
   border-top: 1px solid #eee;
 }
-.centered-text{
-  text-align: center;
-}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -2282,15 +2279,6 @@ th {
 .table > thead > tr > th {
   vertical-align: bottom;
   border-bottom: 2px solid #ddd;
-}
-
-.customError {
-	color: red;
-	font-size:14px;
-}
-
-.customOutput {
-	font-size:18px;
 }
 .table > caption + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > th,
@@ -5037,8 +5025,8 @@ a.thumbnail.active {
   color: #333;
 }
 .alert {
-  padding: 5px;
-  margin-bottom: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
 }

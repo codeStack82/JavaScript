@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Tyler Hunt">
+    <meta name="date" content="9/12/16">
+    <meta name="description" content="Redesign using Bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	   <link href="../myScripts/css/bootstrap.css" rel="stylesheet"/>
+    <link href="../myScripts/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <title>Tyler Hunt's JavaScript Website</title>
+</head>
+
+<body>
+    <header></header>
+
+    <!-- main body container -->
+    <div class="container">
+        <article>
+            <div class="row">
+
+                <!-- /Left sidebar container -->
+                <div class="col-md-2"  id="sideBar">
+                    <!--add nav via Js-->
+                    <!--<script>displaySideBar();</script>-->
+                </div>
+                <!-- /Left sidebar container -->
+                
+                <!-- body container -->
+                <div class="col-md-10">
+
+                    <!--panel container -->
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Prime Number Generator</div>
+                        <div class="panel-body">
+                            <form name="cFlowForm">
+
+                                <br><h4>Starting value</h4><input class="form-control" type="text" id="txt_startValue" name="txt_startValue" placeholder="Enter value...">
+                                <br><h4>End Value</h4><input class="form-control" type="text" id="txt_endValue" name="txt_endValue" placeholder="Enter value..."><br /><br />
+
+                                <input class="btn btn-primary pull-left" type="button" id="btn_getPrimes" value="Get Primes">
+                                <input class="btn btn-primary pull-right" type="button" id="btn_reset" value="Reset">
+                            </form>
+                        </div>
+                        <!--/panel container -->
+
+                    </div>
+                    <!-- /body container -->
+                </div>
+            </div>
+        </article>
+        <hr>
+
+        <footer></footer>
+
+    </div>
+    <!-- /main body container -->
+
+	    <script src="../myScripts/CSP.js"></script>
+</body>
+</html>
